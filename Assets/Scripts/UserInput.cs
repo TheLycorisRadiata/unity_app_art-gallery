@@ -27,6 +27,13 @@ public class UserInput : MonoBehaviour
         verticalInput = movementVector.y;
     }
 
+    public void OnLook(InputAction.CallbackContext ctx)
+    {
+        Vector2 cameraVector = ctx.ReadValue<Vector2>();
+        Debug.Log(cameraVector.x);
+        Debug.Log(cameraVector.y);
+    }
+
     public void OnFire(InputAction.CallbackContext ctx)
     {
         if (ctx.started)
