@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class UserInput : MonoBehaviour
 {
     private static float directionalSpeed, rotationSpeed;
-    private static float horizontalInput, verticalInput;
+    private static float horizontalInput, verticalInput, sideStepInput;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class UserInput : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Translate(new Vector3(0f, 0f, verticalInput) * directionalSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(sideStepInput, 0f, verticalInput) * directionalSpeed * Time.deltaTime);
         transform.Rotate(new Vector3(0f, horizontalInput, 0f) * rotationSpeed * Time.deltaTime);
     }
 
@@ -25,6 +25,11 @@ public class UserInput : MonoBehaviour
         Vector2 movementVector = ctx.ReadValue<Vector2>();
         horizontalInput = movementVector.x;
         verticalInput = movementVector.y;
+    }
+
+    public void OnSideStep(InputAction.CallbackContext ctx)
+    {
+        sideStepInput = ctx.ReadValue<float>();
     }
 
     public void OnLook(InputAction.CallbackContext ctx)
