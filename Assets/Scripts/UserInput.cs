@@ -5,26 +5,12 @@ using UnityEngine.InputSystem;
 
 public class UserInput : MonoBehaviour
 {
-    private static float directionalSpeed, rotationSpeed;
-    private static float horizontalInput, verticalInput, sideStepInput;
-
-    void Start()
-    {
-        directionalSpeed = 10f;
-        rotationSpeed = 40f;
-    }
-
-    void FixedUpdate()
-    {
-        transform.Translate(new Vector3(sideStepInput, 0f, verticalInput) * directionalSpeed * Time.deltaTime);
-        transform.Rotate(new Vector3(0f, horizontalInput, 0f) * rotationSpeed * Time.deltaTime);
-    }
+    public static Vector2 movementVector, cameraVector;
+    public static float sideStepInput;
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
-        Vector2 movementVector = ctx.ReadValue<Vector2>();
-        horizontalInput = movementVector.x;
-        verticalInput = movementVector.y;
+        movementVector = ctx.ReadValue<Vector2>();
     }
 
     public void OnSideStep(InputAction.CallbackContext ctx)
@@ -34,9 +20,7 @@ public class UserInput : MonoBehaviour
 
     public void OnLook(InputAction.CallbackContext ctx)
     {
-        Vector2 cameraVector = ctx.ReadValue<Vector2>();
-        Debug.Log(cameraVector.x);
-        Debug.Log(cameraVector.y);
+        cameraVector = ctx.ReadValue<Vector2>();
     }
 
     public void OnFire(InputAction.CallbackContext ctx)
