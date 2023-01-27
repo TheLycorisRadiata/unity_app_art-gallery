@@ -13,7 +13,7 @@ public class UserMovement : MonoBehaviour
         verticalInput = 0f;
         sideStepInput = 0f;
         directionalSpeed = 10f;
-        rotationSpeed = 40f;
+        rotationSpeed = directionalSpeed * 7f;
     }
 
     void FixedUpdate()
