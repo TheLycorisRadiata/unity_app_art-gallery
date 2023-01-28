@@ -19,16 +19,11 @@ public class DisplayPainting : MonoBehaviour
         // Set sprite
         spriteRend.sprite = sprite;
 
-        // Scale the sprite down
-        Vector3 desiredScale = new Vector3(1.4f, 1.4f, 1f);
-        spriteRend.transform.localScale = desiredScale;
-
-        // Set frame size
-        float spriteWidth = spriteRend.bounds.size.x;
-        float frameWidth = 1.6f;
-        float diff = spriteWidth - frameWidth;
-        Debug.Log(diff);
-        frame.localScale = new Vector3(frame.localScale.x, frame.localScale.y + diff, frame.localScale.z);
+        // Set frame width
+        float spriteWidth = Math.Max(spriteRend.bounds.size.x, spriteRend.bounds.size.z);
+        float spriteFactor = 0.0145f;
+        float frameWidth = spriteWidth / spriteFactor;
+        frame.localScale = new Vector3(frame.localScale.x, frameWidth, frame.localScale.z);
     }
 }
 
