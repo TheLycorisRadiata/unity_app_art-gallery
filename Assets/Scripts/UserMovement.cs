@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +19,11 @@ public class UserMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        horizontalInput = UserInput.movementVector.x;
+        float horMovement = UserInput.movementVector.x;
+        float horCamera = UserInput.cameraVector.x;
+        bool isCameraStronger = Math.Abs(horCamera) > Math.Abs(horMovement);
+
+        horizontalInput = isCameraStronger ? horCamera : horMovement;
         verticalInput = UserInput.movementVector.y;
         sideStepInput = UserInput.sideStepInput;
 

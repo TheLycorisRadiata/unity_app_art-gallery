@@ -4,39 +4,27 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    private static float horizontalInput, verticalInput;
-    private static float horizontalLimit, verticalLimit;
-    private static float sensitivity;
+    private static float verticalInput, verticalLimit, sensitivity;
 
     void Start()
     {
-        horizontalInput = 0f;
         verticalInput = 0f;
-        horizontalLimit = 70f;
         verticalLimit = 35f;
         sensitivity = 0.5f;
     }
 
     void LateUpdate()
     {
-        // Reset the camera position if the user moves
-        if (UserMovement.horizontalInput != 0f || UserMovement.verticalInput != 0f || UserMovement.sideStepInput != 0f)
-        {
-            horizontalInput = 0f;
-            verticalInput = 0f;
-            transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-            return;
-        }
+        // The camera horizontal movement rotates the user, and the camera is the user's child so it already rotates with it
+        // All that is left to do is the vertical rotation
 
-        // Update the variables
-        horizontalInput += UserInput.cameraVector.x * sensitivity;
+        // Update the input with the sensitivity
         verticalInput += -UserInput.cameraVector.y * sensitivity;
 
-        // Clamp them
-        horizontalInput = horizontalInput < -horizontalLimit ? -horizontalLimit : horizontalInput > horizontalLimit ? horizontalLimit : horizontalInput;
+        // Clamp the input
         verticalInput = verticalInput < -verticalLimit ? -verticalLimit : verticalInput > verticalLimit ? verticalLimit : verticalInput;
 
         // Rotate the camera
-        transform.localRotation = Quaternion.Euler(verticalInput, horizontalInput, 0f);
+        transform.localRotation = Quaternion.Euler(verticalInput, 0f, 0f);
     }
 }
