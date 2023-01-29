@@ -99,7 +99,8 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d7a947f853f603f19b6e99152a9af85b,
     type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 13bec67beba98641ba27603f97c92090,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -132,6 +133,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -344,6 +350,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -691,6 +702,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504371674657318817, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -814,6 +830,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -993,7 +1014,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1019,7 +1040,7 @@ MeshRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2925,6 +2946,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504371674657318817, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3048,6 +3074,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -3179,6 +3210,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504371674657318817, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3303,6 +3339,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -3957,6 +3998,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504371674657318817, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4084,6 +4130,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504371674657318817, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4205,7 +4256,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh38102
+  m_Name: pb_Mesh28078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4413,6 +4464,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 2134552731}
     m_Modifications:
     - target: {fileID: 122416327296608404, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 375987561100054675, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
