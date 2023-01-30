@@ -5,8 +5,21 @@ using UnityEngine.InputSystem;
 
 public class UserInput : MonoBehaviour
 {
+    public static bool isCursorWithinAppWindow;
     public static Vector2 movementVector, cameraVector;
     public static float sideStepInput;
+    private static Vector2 screenDimensions;
+
+    void Start()
+    {
+        screenDimensions = new Vector2(Screen.width, Screen.height);
+    }
+
+    public void OnCursorPosition(InputAction.CallbackContext ctx)
+    {
+        Vector2 position = ctx.ReadValue<Vector2>();
+        isCursorWithinAppWindow = !(position.x < 0 || position.x > screenDimensions.x || position.y < 0 || position.y > screenDimensions.y);
+    }
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
@@ -20,7 +33,10 @@ public class UserInput : MonoBehaviour
 
     public void OnLook(InputAction.CallbackContext ctx)
     {
-        cameraVector = ctx.ReadValue<Vector2>();
+        if (isCursorWithinAppWindow)
+            cameraVector = ctx.ReadValue<Vector2>();
+        else
+            cameraVector = new Vector2(0f, 0f);
     }
 
     public void OnFire(InputAction.CallbackContext ctx)

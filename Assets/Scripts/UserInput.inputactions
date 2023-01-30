@@ -6,6 +6,15 @@
             "id": "e5d7385d-e2d0-4b51-bd01-e6fff1a6a3b8",
             "actions": [
                 {
+                    "name": "CursorPosition",
+                    "type": "Value",
+                    "id": "049fa877-7ffe-4945-9c55-2fe28b2311d6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Move",
                     "type": "Value",
                     "id": "ac5c883c-d494-4982-9e3a-694ff0103666",
@@ -295,6 +304,72 @@
                     "action": "SideStep",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "196330fd-c149-4e1a-8cc1-6082f7bb852c",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ffb1ae6-e509-447f-a108-aff54ecb9446",
+                    "path": "<VirtualMouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "932056b1-28ba-4752-9693-b8a071473cf0",
+                    "path": "<Pen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f95b73dd-3772-4e28-99d0-f1edd508c11b",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2976a7bb-c9d9-46b1-a5d9-6efdcdf742af",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b74e0fe6-db92-4a86-a5b8-e87b55e2d44e",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "CursorPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
