@@ -36,7 +36,7 @@ public class UserInput : MonoBehaviour
         if (isCursorWithinAppWindow)
             cameraVector = ctx.ReadValue<Vector2>();
         else
-            cameraVector = new Vector2(0f, 0f);
+            cameraVector = Vector2.zero;
     }
 
     public void OnFire(InputAction.CallbackContext ctx)
