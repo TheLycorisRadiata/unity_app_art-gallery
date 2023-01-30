@@ -8,6 +8,7 @@ public class UserInput : MonoBehaviour
     public static bool isCursorWithinAppWindow;
     public static Vector2 movementVector, cameraVector;
     public static float sideStepInput;
+    public static bool click;
     private static Vector2 screenDimensions;
 
     void Start()
@@ -41,7 +42,6 @@ public class UserInput : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext ctx)
     {
-        if (ctx.started)
-            Debug.Log("Fire!");
+        click = ctx.canceled ? false : true;
     }
 }

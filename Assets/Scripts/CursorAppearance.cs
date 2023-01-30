@@ -6,8 +6,8 @@ public class CursorAppearance : MonoBehaviour
 {
     [SerializeField] private Texture2D basic, clickableTarget, clickedTarget;
     private static CursorMode cursorMode = CursorMode.ForceSoftware;
-    private static Vector2 hotSpotZero = Vector2.zero;
     private static Vector2 hotSpotBasic = new Vector2(20f, 5f);
+    private static Vector2 hotSpotTarget = new Vector2(64f, 64f);
 
     void Awake()
     {
@@ -26,11 +26,11 @@ public class CursorAppearance : MonoBehaviour
 
     public void ClickableTarget()
     {
-        Cursor.SetCursor(clickableTarget, hotSpotZero, cursorMode);
+        Cursor.SetCursor(clickableTarget, hotSpotTarget, cursorMode);
     }
 
     public void ClickedTarget()
     {
-        Cursor.SetCursor(clickedTarget, hotSpotZero, cursorMode);
+        Cursor.SetCursor(clickedTarget, hotSpotTarget, cursorMode);
     }
 }

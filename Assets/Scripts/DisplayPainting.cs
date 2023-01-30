@@ -7,14 +7,13 @@ using TMPro;
 
 public class DisplayPainting : MonoBehaviour
 {
-    // tmp - delete later
-    [SerializeField] private bool displayDescription;
-
+    private static CursorAppearance customCursor;
     private static Color activatedDescColor, deactivatedDescColor;
     [SerializeField] private Sprite sprite;
     [SerializeField] private TextAsset jsonFile;
     private SpriteRenderer spriteRend;
     private GameObject goDescription;
+    private bool isDescriptionActivated;
 
     void Awake()
     {
@@ -48,12 +47,11 @@ public class DisplayPainting : MonoBehaviour
         activatedDescColor = new Color(0.11f, 0.09f, 0.09f, 1f); // #1C1717
         deactivatedDescColor = new Color(1f, 1f, 1f, 1f); // #FFF
         // Deactivate it
-        DescriptionActivation(false);
-    }
+        isDescriptionActivated = false;
+        DescriptionActivation(isDescriptionActivated);
 
-    void LateUpdate()
-    {
-        DescriptionActivation(displayDescription);
+        // Cursor
+        customCursor = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
     }
 
     private void DescriptionActivation(bool activate)
@@ -68,6 +66,27 @@ public class DisplayPainting : MonoBehaviour
             spriteRend.color = deactivatedDescColor;
             goDescription.SetActive(false);
         }
+    }
+
+    private void OnMouseEnter()
+    {
+        customCursor.ClickableTarget();
+    }
+
+    private void OnMouseOver()
+    {
+        // customCursor.ClickedTarget();
+        if (UserInput.click)
+        {
+            isDescriptionActivated = !isDescriptionActivated;
+            DescriptionActivation(isDescriptionActivated);
+            UserInput.click = false;
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        customCursor.Basic();
     }
 }
 
