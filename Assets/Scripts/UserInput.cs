@@ -10,6 +10,12 @@ public class UserInput : MonoBehaviour
     public static float sideStepInput;
     public static bool click;
     private static Vector2 screenDimensions;
+    private static CursorAppearance cursorAppearance;
+
+    void Awake()
+    {
+        cursorAppearance = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
+    }
 
     void Start()
     {
@@ -43,5 +49,6 @@ public class UserInput : MonoBehaviour
     public void OnFire(InputAction.CallbackContext ctx)
     {
         click = ctx.canceled ? false : true;
+        cursorAppearance.Click();
     }
 }

@@ -7,7 +7,7 @@ using TMPro;
 
 public class DisplayPainting : MonoBehaviour
 {
-    private static CursorAppearance customCursor;
+    private static CursorAppearance cursorAppearance;
     private static Color activatedDescColor, deactivatedDescColor;
     [SerializeField] private Sprite sprite;
     [SerializeField] private TextAsset jsonFile;
@@ -51,7 +51,7 @@ public class DisplayPainting : MonoBehaviour
         DescriptionActivation(isDescriptionActivated);
 
         // Cursor
-        customCursor = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
+        cursorAppearance = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
     }
 
     private void DescriptionActivation(bool activate)
@@ -70,12 +70,11 @@ public class DisplayPainting : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        customCursor.ClickableTarget();
+        cursorAppearance.ChangeCursorAppearance(CursorAppearance.CursorState.CLICKABLE_TARGET);
     }
 
     private void OnMouseOver()
     {
-        // customCursor.ClickedTarget();
         if (UserInput.click)
         {
             isDescriptionActivated = !isDescriptionActivated;
@@ -86,7 +85,7 @@ public class DisplayPainting : MonoBehaviour
 
     private void OnMouseExit()
     {
-        customCursor.Basic();
+        cursorAppearance.ChangeCursorAppearance(CursorAppearance.CursorState.DEFAULT);
     }
 }
 

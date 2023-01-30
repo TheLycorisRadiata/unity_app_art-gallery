@@ -4061,9 +4061,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b71c4e546222f4ea409c1123f8c716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basic: {fileID: 2800000, guid: a5f9cc9a5efbe894eb85de4851711ba8, type: 3}
-  clickableTarget: {fileID: 2800000, guid: 009bc0f57c177604a90b4697026d8c00, type: 3}
-  clickedTarget: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd, type: 3}
+  defaultTexture: {fileID: 2800000, guid: a5f9cc9a5efbe894eb85de4851711ba8, type: 3}
+  clickableTargetTexture: {fileID: 2800000, guid: 009bc0f57c177604a90b4697026d8c00,
+    type: 3}
+  clickedTargetTexture: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd,
+    type: 3}
 --- !u!1001 &1774348337
 PrefabInstance:
   m_ObjectHideFlags: 0
