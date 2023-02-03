@@ -68,6 +68,12 @@ public class DisplayPainting : MonoBehaviour
         }
     }
 
+    public void SwitchDescriptionActivation()
+    {
+        isDescriptionActivated = !isDescriptionActivated;
+        DescriptionActivation(isDescriptionActivated);
+    }
+
     private void OnMouseEnter()
     {
         cursorAppearance.ChangeCursorAppearance(CursorAppearance.CursorState.CLICKABLE_TARGET);
@@ -77,8 +83,7 @@ public class DisplayPainting : MonoBehaviour
     {
         if (UserInput.click)
         {
-            isDescriptionActivated = !isDescriptionActivated;
-            DescriptionActivation(isDescriptionActivated);
+            SwitchDescriptionActivation();
             UserInput.click = false;
         }
     }
