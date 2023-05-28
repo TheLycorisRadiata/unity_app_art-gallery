@@ -3,16 +3,14 @@ using UnityEngine;
 
 public class UserMovement : MonoBehaviour
 {
-    public static float HorizontalInput, VerticalInput, SideStepInput;
-    private static float _directionalSpeed, _rotationSpeed;
+    public static float HorizontalInput = 0f, VerticalInput = 0f, SideStepInput = 0f;
+    private static float _directionalSpeed = 8f;
+    private static float _rotationSpeed = _directionalSpeed * 7f;
+    private static Transform _player;
 
-    private void Start()
+    private void Awake()
     {
-        HorizontalInput = 0f;
-        VerticalInput = 0f;
-        SideStepInput = 0f;
-        _directionalSpeed = 10f;
-        _rotationSpeed = _directionalSpeed * 7f;
+        _player = transform.parent;
     }
 
     private void FixedUpdate()
@@ -25,7 +23,7 @@ public class UserMovement : MonoBehaviour
         VerticalInput = UserInput.MovementVector.y;
         SideStepInput = UserInput.SideStepInput;
 
-        transform.Translate(new Vector3(SideStepInput, 0f, VerticalInput) * _directionalSpeed * Time.deltaTime);
-        transform.Rotate(new Vector3(0f, HorizontalInput, 0f) * _rotationSpeed * Time.deltaTime);
+        _player.Translate(new Vector3(SideStepInput, 0f, VerticalInput) * _directionalSpeed * Time.deltaTime);
+        _player.Rotate(new Vector3(0f, HorizontalInput, 0f) * _rotationSpeed * Time.deltaTime);
     }
 }

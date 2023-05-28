@@ -6,6 +6,15 @@
             "id": "09ff3ccc-21b4-4346-a3a2-7c978b5af892",
             "actions": [
                 {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "030cd510-c03b-42f2-8952-b5b3c9c86896",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Position",
                     "type": "Value",
                     "id": "1a9029f8-7a46-46b9-9eff-e9ae8365f611",
@@ -44,6 +53,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "67169878-7ca0-4257-8e3e-5839e3e7d329",
+                    "path": "<XRHMD>/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Tracking State",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
