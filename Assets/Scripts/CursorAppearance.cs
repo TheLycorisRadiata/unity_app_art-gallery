@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CursorAppearance : MonoBehaviour
 {
     public enum CursorState { HARDWARE, DEFAULT, CLICKABLE_TARGET, CLICKED_TARGET };
-    private static CursorState state;
+    private static CursorState _state;
 
-    [SerializeField] private Texture2D defaultTexture, clickableTargetTexture, clickedTargetTexture;
-    private static Vector2 defaultHotspot = new Vector2(20f, 5f);
-    private static Vector2 targetHotspot = new Vector2(64f, 64f);
+    [SerializeField] private Texture2D _defaultTexture, _clickableTargetTexture, _clickedTargetTexture;
+    private static Vector2 _defaultHotspot = new Vector2(20f, 5f);
+    private static Vector2 _targetHotspot = new Vector2(64f, 64f);
 
-    void Awake()
+    private void Awake()
     {
         Default();
     }
@@ -38,15 +36,15 @@ public class CursorAppearance : MonoBehaviour
     public void Click()
     {
         // On click, focus from "clickable" to "clicked"
-        if (UserInput.click)
+        if (UserInput.Click)
         {
-            if (state == CursorState.CLICKABLE_TARGET)
+            if (_state == CursorState.CLICKABLE_TARGET)
                 ClickedTarget();
         }
         // On click release, switch back from the focus
         else
         {
-            if (state == CursorState.CLICKED_TARGET)
+            if (_state == CursorState.CLICKED_TARGET)
                 ClickableTarget();
         }
     }
@@ -54,24 +52,24 @@ public class CursorAppearance : MonoBehaviour
     private void Hardware()
     {
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        state = CursorState.HARDWARE;
+        _state = CursorState.HARDWARE;
     }
 
     private void Default()
     {
-        Cursor.SetCursor(defaultTexture, defaultHotspot, CursorMode.ForceSoftware);
-        state = CursorState.DEFAULT;
+        Cursor.SetCursor(_defaultTexture, _defaultHotspot, CursorMode.ForceSoftware);
+        _state = CursorState.DEFAULT;
     }
 
     private void ClickableTarget()
     {
-        Cursor.SetCursor(clickableTargetTexture, targetHotspot, CursorMode.ForceSoftware);
-        state = CursorState.CLICKABLE_TARGET;
+        Cursor.SetCursor(_clickableTargetTexture, _targetHotspot, CursorMode.ForceSoftware);
+        _state = CursorState.CLICKABLE_TARGET;
     }
 
     private void ClickedTarget()
     {
-        Cursor.SetCursor(clickedTargetTexture, targetHotspot, CursorMode.ForceSoftware);
-        state = CursorState.CLICKED_TARGET;
+        Cursor.SetCursor(_clickedTargetTexture, _targetHotspot, CursorMode.ForceSoftware);
+        _state = CursorState.CLICKED_TARGET;
     }
 }

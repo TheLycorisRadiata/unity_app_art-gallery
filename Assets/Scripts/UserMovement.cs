@@ -1,33 +1,31 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UserMovement : MonoBehaviour
 {
-    public static float horizontalInput, verticalInput, sideStepInput;
-    private static float directionalSpeed, rotationSpeed;
+    public static float HorizontalInput, VerticalInput, SideStepInput;
+    private static float _directionalSpeed, _rotationSpeed;
 
-    void Start()
+    private void Start()
     {
-        horizontalInput = 0f;
-        verticalInput = 0f;
-        sideStepInput = 0f;
-        directionalSpeed = 10f;
-        rotationSpeed = directionalSpeed * 7f;
+        HorizontalInput = 0f;
+        VerticalInput = 0f;
+        SideStepInput = 0f;
+        _directionalSpeed = 10f;
+        _rotationSpeed = _directionalSpeed * 7f;
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        float horMovement = UserInput.movementVector.x;
-        float horCamera = UserInput.cameraVector.x;
+        float horMovement = UserInput.MovementVector.x;
+        float horCamera = UserInput.CameraVector.x;
         bool isCameraStronger = Math.Abs(horCamera) > Math.Abs(horMovement);
 
-        horizontalInput = isCameraStronger ? horCamera : horMovement;
-        verticalInput = UserInput.movementVector.y;
-        sideStepInput = UserInput.sideStepInput;
+        HorizontalInput = isCameraStronger ? horCamera : horMovement;
+        VerticalInput = UserInput.MovementVector.y;
+        SideStepInput = UserInput.SideStepInput;
 
-        transform.Translate(new Vector3(sideStepInput, 0f, verticalInput) * directionalSpeed * Time.deltaTime);
-        transform.Rotate(new Vector3(0f, horizontalInput, 0f) * rotationSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(SideStepInput, 0f, VerticalInput) * _directionalSpeed * Time.deltaTime);
+        transform.Rotate(new Vector3(0f, HorizontalInput, 0f) * _rotationSpeed * Time.deltaTime);
     }
 }

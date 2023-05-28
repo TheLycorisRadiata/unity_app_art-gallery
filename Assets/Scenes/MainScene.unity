@@ -160,7 +160,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80c859377d012554db2ec1116895d52c,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 168968529829f294aba09eea9c537f33, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 168968529829f294aba09eea9c537f33, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -382,7 +393,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fafe197ffd23a464b9171f1961e8256d,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 59e78dc2acabcbb46931d4ab1b939438, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 59e78dc2acabcbb46931d4ab1b939438, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -732,7 +754,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dcbaa60dd74ee4a4591d4aee48f00b71,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 592ca997e3e632d438aa7b012ec00292, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 592ca997e3e632d438aa7b012ec00292, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -869,6 +902,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f6f3882d7caeb864b9b76ae58fe6c6eb,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: fa9b27360e4a9a343b929e5047d12d55, type: 3}
@@ -878,6 +917,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f6f3882d7caeb864b9b76ae58fe6c6eb,
         type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: fa9b27360e4a9a343b929e5047d12d55, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: testSprite
@@ -2986,7 +3030,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b4cbb7c8e7226034c95c40cfb9787c0b,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: d59277fe1bd0590429bd98cd676204e2, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: d59277fe1bd0590429bd98cd676204e2, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -3385,7 +3440,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f55c3e6f9545cd43a35f2bb1606cd0c,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: ff5b2b868947e0d4eb61be4529c565be, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: ff5b2b868947e0d4eb61be4529c565be, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -3517,6 +3583,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ba22f96835d8294495b2728f5df968b,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: e8e9dcbe9bc9d6241bee45fb054f7520, type: 3}
@@ -3526,6 +3598,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9ba22f96835d8294495b2728f5df968b,
         type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: e8e9dcbe9bc9d6241bee45fb054f7520, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: testSprite
@@ -3891,7 +3968,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 14bedee223eb06643946dad04ba3c68b,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 90b6efa74814f344f9756a5f1cd8a05a, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 90b6efa74814f344f9756a5f1cd8a05a, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -5006,10 +5094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b71c4e546222f4ea409c1123f8c716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTexture: {fileID: 2800000, guid: a5f9cc9a5efbe894eb85de4851711ba8, type: 3}
-  clickableTargetTexture: {fileID: 2800000, guid: 009bc0f57c177604a90b4697026d8c00,
+  _defaultTexture: {fileID: 2800000, guid: a5f9cc9a5efbe894eb85de4851711ba8, type: 3}
+  _clickableTargetTexture: {fileID: 2800000, guid: 009bc0f57c177604a90b4697026d8c00,
     type: 3}
-  clickedTargetTexture: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd,
+  _clickedTargetTexture: {fileID: 2800000, guid: f27d2a87b8553f8438fadbb8f50e9bbd,
     type: 3}
 --- !u!1 &1691426095
 GameObject:
@@ -5388,7 +5476,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c2a89bd94157814e8822bcb66d415d9,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 4ef94cac0d9cd5a4c9bb9a77984e74c6, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 4ef94cac0d9cd5a4c9bb9a77984e74c6, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -5826,7 +5925,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ccbeccfb9bc66b54a8f1cc1ecb12a650,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: cde26d1643aa0e048aefccd389147de4, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: cde26d1643aa0e048aefccd389147de4, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
@@ -6282,7 +6392,18 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 53308223db0c24043b327c1ffd9c2feb,
+        type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
       propertyPath: jsonFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 4ee2653f3b3a9ec43a3a5be1f112be12, type: 3}
+    - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: _jsonFile
       value: 
       objectReference: {fileID: 4900000, guid: 4ee2653f3b3a9ec43a3a5be1f112be12, type: 3}
     - target: {fileID: 578522214794778526, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
