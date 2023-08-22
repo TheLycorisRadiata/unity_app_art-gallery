@@ -1,4 +1,8 @@
 # Art Gallery
 
-3D version stopped at [this commit](https://github.com/TheLycorisRadiata/unity_app_art-gallery/tree/b7eb6d9e8e2133b8deb0ff87189f8a71d01e0adc), the rest is the VR version.  
+The app automatically detects whether a VR headset is connected. If so, the VR version is launched, otherwise the 3D one is.  
+
+[Release](https://play.unity.com/mg/other/art-gallery-2)  
+
+![](./in_app_screenshot.png)
 
