@@ -97,6 +97,6 @@ public class DisplayPainting : MonoBehaviour
 
     private void GetCursorAppearanceScript()
     {
-        _cursorAppearance = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
+        _cursorAppearance = GameObject.Find("Cursors").GetComponent<CursorAppearance>();
     }
 }

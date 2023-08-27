@@ -12,7 +12,7 @@ public class UserInput : MonoBehaviour
 
     private void Awake()
     {
-        _cursorAppearance = GameObject.Find("App Manager").GetComponent<CursorAppearance>();
+        _cursorAppearance = GameObject.Find("Cursors").GetComponent<CursorAppearance>();
     }
 
     private void Start()

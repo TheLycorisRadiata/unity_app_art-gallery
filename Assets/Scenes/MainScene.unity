@@ -4611,7 +4611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1623265015
 Transform:
   m_ObjectHideFlags: 0
@@ -4987,6 +4987,9 @@ MonoBehaviour:
     type: 3}
   _player3D: {fileID: 1870617658}
   _playerVR: {fileID: 1943366636}
+  _vrRayInteractors:
+  - {fileID: 1623265014}
+  - {fileID: 1691426095}
 --- !u!54 &1673599391
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5065,7 +5068,7 @@ GameObject:
   - component: {fileID: 1682040493}
   - component: {fileID: 1682040494}
   m_Layer: 0
-  m_Name: App Manager
+  m_Name: Cursors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5121,7 +5124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1691426096
 Transform:
   m_ObjectHideFlags: 0
